@@ -10,7 +10,7 @@ import java.time.Duration;
 public class C01_JUnit_FirstTest {
 
     /*
-     Junit ile Main Method kullanma doneminibitiriyoruz.
+     Junit ile Main Method kullanma donemini bitiriyoruz.
     ❖Junit Framework kullandigimizda yazdığımız test metodunun calismasi icin başına @Test
      notasyonu eklememiz yeterlidir.
     ❖@Test notasyonu eklemedigimiz metot test sırasında çalışıtırılmaz. Ancak cagrilirsa calisir.
