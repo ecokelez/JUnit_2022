@@ -29,7 +29,7 @@ public class C01_JUnit_FirstTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         driver.get("https://amazon.com");
-        driver.close();
+      //  driver.close();
     }
 
     @Test

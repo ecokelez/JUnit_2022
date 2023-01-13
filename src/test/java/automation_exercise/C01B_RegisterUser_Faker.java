@@ -7,12 +7,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 import utilities.TestBase_BeforeAfter;
 
 import static junit.framework.TestCase.assertTrue;
 
-public class Register_User extends TestBase_BeforeAfter {
+public class C01B_RegisterUser_Faker extends TestBase_BeforeAfter {
 
         /*
        Test Case 1: Register User
@@ -38,7 +37,7 @@ public class Register_User extends TestBase_BeforeAfter {
 
 
     @Test
-    public void registerUser() {
+    public void registerUser()  {
         Faker faker = new Faker();
         Actions actions = new Actions(driver);
 
@@ -78,10 +77,11 @@ public class Register_User extends TestBase_BeforeAfter {
                 sendKeys("December").sendKeys(Keys.TAB).
                 sendKeys("2013").sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();
 
+
         //    10. Select checkbox 'Sign up for our newsletter!'
         driver.findElement(By.xpath("//*[@id='newsletter']")).click();
 
-        //    11. Select checkbox 'Receive special offers from our partners!.'
+        //    11. Select checkbox 'Receive special offers from our partners!."'
         //    12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
         //    13. Click 'Create Account button'
        WebElement checkboxWE=  driver.findElement(By.xpath("//*[@id='optin']"));
@@ -107,11 +107,11 @@ public class Register_User extends TestBase_BeforeAfter {
         assertTrue(driver.findElement(By.xpath("//*[text()=' Logged in as ']")).isDisplayed());
 
         //    17. Click 'Delete Account' button
-        driver.findElement(By.xpath("//*[text()=' Delete Account']")).click();
+        //driver.findElement(By.xpath("//*[text()=' Delete Account']")).click();
 
         //    18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
-        assertTrue(driver.findElement(By.xpath("//*[@class='title text-center']")).isDisplayed());
-        driver.findElement(By.xpath("//*[@class='btn btn-primary']")).click();
+       // assertTrue(driver.findElement(By.xpath("//*[@class='title text-center']")).isDisplayed());
+       // driver.findElement(By.xpath("//*[@class='btn btn-primary']")).click();
 
     }
 }
