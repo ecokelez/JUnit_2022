@@ -95,8 +95,6 @@ public class C01A_RegisterUser extends TestBase_BeforeAfter {
                 .sendKeys(Keys.TAB).sendKeys("67000")
                 .sendKeys(Keys.TAB).sendKeys("12345")
                 .sendKeys(Keys.ENTER).perform();
-
-
         //    13. Click 'Create Account button'
         //    14. Verify that 'ACCOUNT CREATED!' is visible
         WebElement accountCreated = driver.findElement(By.xpath("//*[text()='Account Created!']"));
