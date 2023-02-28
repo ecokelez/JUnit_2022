@@ -44,7 +44,7 @@ public class C01_HandleWindows {
         driver.switchTo().newWindow(WindowType.TAB);
         /*
         Bu komutu kullandıgımızda driver otomatik olarak olusturulan new Tab'a gecer,
-        yeni Tab'da gorevi gerceklestirmek icinadimlari bastan almamiz gerekir
+        yeni Tab'da gorevi gerceklestirmek icin adimlari bastan almamiz gerekir
         */
         driver.get("https://amazon.com");
         System.out.println(driver.getTitle());

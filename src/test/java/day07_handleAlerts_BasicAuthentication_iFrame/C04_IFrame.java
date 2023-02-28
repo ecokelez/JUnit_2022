@@ -44,7 +44,6 @@ public class C04_IFrame {
         //    ○“An IFrame containing….” textinin erisilebilir old. test edin ve yazdirin.
         WebElement baslikWE = driver.findElement(By.xpath("//h3"));
         Assert.assertTrue(baslikWE.isEnabled());
-        ///***Assert.assertTrue(driver.findElement(By.xpath("//h3")).isEnabled());
         System.out.println("baslikWE : " + baslikWE.getText());
         //    ○Text Box’a “Merhaba Dunya!”yazin.
 

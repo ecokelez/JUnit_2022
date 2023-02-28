@@ -52,9 +52,6 @@ public class C03_BasicAuthentication {
 
         Assert.assertTrue(driver.findElement(By.xpath("  //*[@class='example']")).isDisplayed());
 
-        //WebElement sonucWE = driver.findElement(By.xpath("  //*[@class='example']"));
-        //Assert.assertTrue(sonucWE.isDisplayed());
-
 
     }
 

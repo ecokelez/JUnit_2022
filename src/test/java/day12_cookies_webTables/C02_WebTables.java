@@ -50,6 +50,9 @@ public class C02_WebTables extends TestBase_BeforeAfter {
         List<WebElement> sutunSayisi = driver.findElements(By.xpath("//thead//tr[1]//th"));
         System.out.println("Sutun sayisi :  = " + sutunSayisi.size());
         //        ○Table’daki tum body’I ve başlıkları(headers) konsolda yazdırın.
+        WebElement basliklar = driver.findElement(By.xpath("//thead//tr"));
+        System.out.println("Basliklar : " + basliklar.getText());
+
         /*
         NOT :  ==> Tum body'i  bir String olarak yazdirmak isterseniz body WebElement' ini locate edip
         getText() method'u ile yazdirabilirsiniz
@@ -67,7 +70,7 @@ public class C02_WebTables extends TestBase_BeforeAfter {
         }
         /// ==> Lambda ile :
         satirSayisi.forEach(t-> System.out.println(t.getText()));
-        //        ○4.satirdaki(row) elementleri konsolda yazdırın
+        //        ○ 4.satirdaki(row) elementleri konsolda yazdırın
         List<WebElement> cellList = driver.findElements(By.xpath("//tbody//tr[4]"));
         for (WebElement w: cellList) {
             System.out.println(w.getText());

@@ -55,6 +55,7 @@ public class C01_ReadExcel{
         String expectedData = "Cezayir";
         String actualData = cell.toString();
         Assert.assertEquals(expectedData,actualData);
+        Assert.assertEquals(expectedData,cell.getStringCellValue());
 
 
 
